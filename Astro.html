@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Style Files Including Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Stylesheets/astro.css">
+    <link rel="stylesheet" href="Stylesheets/bubbles.css">
+    <title>QuizzyPop!</title>
+</head>
+<body>
+    <!--Implementing the Bubble Animation-->
+    <div class="area">
+        <ul class="circles">
+            <!--Empty Lists acting as the bubbles-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Header -->
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h2 class="logo">
+                    QuizzyPop!
+                </h2>
+            </div>
+        </header>
+
+        <!-- Section for Content -->
+        <section class="banner">
+            <div class="banner-left">
+                <h2 class="banner-title">
+                    Put your Astronomy knowledge to the test!
+                    <span class="highlight"> Astronomy </span> Quiz!
+                </h2>
+                <p class="banner-description">
+                    This quiz is deisgned to challenge even the most knowledgeable individuals.
+                    From easy to hard, we've got something for everyone.
+                    This quiz is not only fun but also informative.
+                </p>
+                <button id="condition-modal-btn">
+                    Start Quiz
+                    <span> <i class="fa-solid fa-arrow-right-long"></i> </span>
+                </button>
+                </div>
+                <div class="banner-right">
+                    <img src="img/astro.png" alt="banner image" class="floating" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Rule Sections -->
+        <section class="quiz-modal-container">
+            <div class="quiz-modal-condition glass">
+            <h2 class="modal-title">Some rules to play this Quizes!</h2>
+            <div class="modal-conditions">
+                <p>
+                1. You will have only
+                <span class="highlight">10 seconds</span> for each question.
+                </p>
+                <p>2. You can't select any option once time goes off.</p>
+                <p>3. You will get points on the basis of your correct answer.</p>
+            </div>
+            <div class="condition-actions">
+                <form action="index.html">
+                    <button type='submit' class="exit-modal btn">Exit Quiz</button>
+                </form>
+                <button class="start-quiz btn">Continue</button>
+            </div>
+            </div>
+        </section>
+
+        <!-- Question Section -->
+        <section class="question-section">
+            <div class="question-container glass">
+            <div class="question-header">
+                <div class="time-container">
+                <div class="time">
+                    <span class="time-count"> 10</span> seconds Left
+                </div>
+                </div>
+                <div class="user-score">
+                <p><span class="score"> 10</span> points</p>
+                </div>
+            </div>
+            <div class="timeline"></div>
+            <div class="question-center">
+                <h2 class="question-text"></h2>
+                <div class="question-options"></div>
+                <div class="answer-description"></div>
+            </div>
+
+            <div class="question-footer">
+                <div class="question-left">
+                <div class="question-progress-container">
+                    <div class="question-progress"></div>
+                </div>
+                <div class="question-progress-text"></div>
+                </div>
+                <div class="question-action">
+                <button class="next-question btn">Next Question</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section class="result-section">
+            <div class="result-box glass">
+            <h2 class="result-expression">Congratulations!!!!</h2>
+            <p class="result-text">You Scored 60 Points</p>
+            <p class="result-feedback">
+                <span class="feedback"></span>
+            </p>
+            <div class="result-actions">
+                <button class="restart btn">Restart Quiz</button>
+                <form action="index.html">
+                    <button class="back-to-home btn">Back to Home</button>
+                </form>
+            </div>
+            </div>
+        </section>
+
+        <canvas id="my-canvas"></canvas>
+
+    </div>
+
+    <!--Js Script Files Including Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Scripts/astroQ.js"></script>
+    <script src="Scripts/appAstr.js"></script>
+</body>
+</html>

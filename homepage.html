@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Stylesheets/home.css">
+    <link rel="stylesheet" href="Stylesheets/bubbles.css">
+    <link rel="stylesheet" href="Stylesheets/nav.css">
+    <title>QuizzyPop!</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand">QuizzyPop!</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                <div class="navbar-nav">
+                    <a href="homepage.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>			
+                    <div class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Quizzes</a>
+                        <div class="dropdown-menu">	
+                            <p>For Students</p>				
+                            <form action="Astro.html">
+                                <button class="dropdown-item" id="QuizAstr">Astronomy</button>
+                            </form>
+                            <form action="Physics.html">
+                                <button class="dropdown-item" id="QuizPhy">Physics</button>
+                            </form>
+                            <br/>
+                            <p>For Fun</p>
+                            <form action="Animal.html">
+                                <button class="dropdown-item" id="QuizAni">Animals</button>
+                            </form>
+                            <form action="FunFacts.html">
+                                <button class="dropdown-item" id="QuizFun">Fun Facts</button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>         
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="topbanner">
+            <img src="img/welcomebanner.png" alt="Quizpop! is about having fun and learning at the same time">
+        </div>
+        <div class="subtitle">
+            <h3>Check out our latest quizzes!</h3>
+        </div>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
